@@ -9,3 +9,10 @@ if contArroba == 1:
     print("El email parece correcto")
 else:
     print("El email no parece correcto")
+
+def emailDomain(email):
+    domain = ""
+    for index, letter in email:
+        if letter == "@":
+            domain = email[index+1:]
+    return domain
