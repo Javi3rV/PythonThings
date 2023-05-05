@@ -44,7 +44,7 @@ while len(re.findall("[0-9]", "".join(passwd)))<numAmount:
         passwd[randPos] = random.choice(dict[27:37])
 
 # agregar simbolos
-while len(re.findall("[#$%&/_-]", "".join(passwd)))<symAmount:
+while len(re.findall("[#$%&/_.-]", "".join(passwd)))<symAmount:
     randPos = random.randint(0, passLength-1)
     if not passwd[randPos] in dict[27:37]:
         passwd[randPos] = random.choice(dict[37:])
