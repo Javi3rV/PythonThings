@@ -1,4 +1,4 @@
-email = input("Introduce un email: ")
+email = input("Input an email: ")
 contArroba = 0
 for letter in email:
     if letter == "@":
@@ -23,7 +23,7 @@ def domainTLD(domain):
 
 
 if contArroba == 1 and domainTLD(emailDomain(email)) != "err":
-    print("El email parece correcto")
+    print("The email seems legit")
 else:
-    print("El email no parece correcto")
+    print("The email is stranger than Dr. Strange")
 
