@@ -1,4 +1,5 @@
 dict = "abcdefghijklmnñopqrstuvwxyz"
+
 def crypt(text, rots):
     text = list(text.lower())
     for index, letter in enumerate(text):
@@ -7,6 +8,7 @@ def crypt(text, rots):
             cipheredIndex = (originalIndex+rots) % len(dict)
             text[index] = dict[cipheredIndex]
     return "".join(text)
+
 def decrypt(text, rots):
     text = list(text)
     for index, letter in enumerate(text):
