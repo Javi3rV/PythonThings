@@ -18,18 +18,19 @@ def decrypt(text, rots):
             text[index] = dict[originalIndex]
     return "".join(text)
 
-opt = input("Encrypt or Decrypt? (E/D): ")
-if opt.lower() == "e":
-    try:
-        text = input("Input text to encrypt: ")
-        rots = int(input("Number of rotations: "))
-    except:
-        print("Something went wrong, please enter data correctly")
-    print(crypt(text, rots))
-elif opt.lower() == "d":
-    try:
-        text = input("Input text to decrypt: ")
-        rots = int(input("Number of rotations: "))
-    except:
-        print("Something went wrong, please enter data correctly")
-    print(decrypt(text, rots))
+if __name__ == "__main__":
+    opt = input("Encrypt or Decrypt? (E/D): ")
+    if opt.lower() == "e":
+        try:
+            text = input("Input text to encrypt: ")
+            rots = int(input("Number of rotations: "))
+        except:
+            print("Something went wrong, please enter data correctly")
+        print(crypt(text, rots))
+    elif opt.lower() == "d":
+        try:
+            text = input("Input text to decrypt: ")
+            rots = int(input("Number of rotations: "))
+        except:
+            print("Something went wrong, please enter data correctly")
+        print(decrypt(text, rots))
