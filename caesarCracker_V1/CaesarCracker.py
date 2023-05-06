@@ -1,7 +1,7 @@
 import CaesarCipher as cCrypt
 dict = "abcdefghijklmnñopqrstuvwxyz"
-englishDict = open("caesarCracker/englishDict.txt", "r", encoding="utf-8", errors="ignore").read().replace("\n", " ").split()
-spanishDict = open("caesarCracker/spanishDict.txt", "r", encoding="utf-8").read().replace("\n", " ").split()
+englishDict = open("caesarCracker_V1/englishDict.txt", "r", encoding="utf-8", errors="ignore").read().replace("\n", " ").split()
+spanishDict = open("caesarCracker_V1/spanishDict.txt", "r", encoding="utf-8").read().replace("\n", " ").split()
 text = input("Text to crack: ")
 found = 0
 for key in range(len(dict)):
