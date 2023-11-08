@@ -20,10 +20,7 @@ def domainTLD(domain):
 
     return tld
 
-
-
 if contArroba == 1 and domainTLD(emailDomain(email)) != "err":
     print("The email seems legit")
 else:
     print("The email is stranger than Dr. Strange")
-
